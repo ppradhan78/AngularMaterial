@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { LoggerService } from './common/commonServices/logger.service';
-import { printLog } from './decorators/logdecorator';
+import { printLog } from './custom/decorators/logdecorator';
 import { HomeAutomationFacade } from './FacadePattern/HomeAutomationFacade';
 import { LightSystemOne } from './FacadePattern/LightSystemOne';
 import { SecuritySystemOne } from './FacadePattern/SecuritySystemOne';

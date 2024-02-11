@@ -1,1 +1,21 @@
 <p>home works!</p>
+<p>Directive</p>
+<input type="text" appSpecialCharRemove />
+<p>Pipe</p>
+<p>{{ value | appSpecialCharRemove }}</p>
+<form #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value)">
+  <div>
+    <label>
+      Email:
+      <input ngModel name="email" placeholder="Email" />
+    </label>
+  </div>
+  <div>
+    <label>
+      Message:
+      <input ngModel name="message" placeholder="message" />
+    </label>
+  </div>
+  <div></div>
+  <button type="submit">Send</button>
+</form>

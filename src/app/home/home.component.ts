@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  value = "!@#abc";
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
-
+  onSubmit(formValues: object) {
+    console.log('formValues :>> ', formValues);
+  }
 }

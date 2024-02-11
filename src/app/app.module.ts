@@ -23,6 +23,9 @@ import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { ProductsService } from './products/products.service';
 import { ProductsComponent } from './products/products.component';
+import { SpecialCharactersRemoveDirective } from './custom/directives/special-characters-remove-directive';
+import { SpecialCharactersRemovePipe } from './custom/pipes/special-characters-remove-pipe';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +37,10 @@ import { ProductsComponent } from './products/products.component';
     MenuComponent,
     HomeComponent,
     EmployeeComponent,
-    ProductsComponent
+    ProductsComponent,
+    SpecialCharactersRemoveDirective,
+    SpecialCharactersRemovePipe
+
   ],
   imports: [
     HttpClientModule,
@@ -49,7 +55,8 @@ import { ProductsComponent } from './products/products.component';
     BrowserAnimationsModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    FormsModule 
 
   ],
   /*providers: [LoggerService],*/
